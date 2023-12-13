@@ -1,0 +1,10 @@
+<div>
+   <!-- user-profile.component.html -->
+<img [src]="user.photo" [alt]="user.name" />
+<input type="text" [(ngModel)]="user.quote" />
+<p *ngIf="user.age !== null">Âge : {{ user.age }}</p>
+<p>Nom : {{ user.name }} {{ user.firstName }}</p>
+<button (click)="toggleAgeVisibility()">Basculer la visibilité de l'âge</button>
+
+
+</div>
